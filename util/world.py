@@ -95,7 +95,7 @@ def parse_args():
     parser.add_argument("--noise_head_stats_path", type=str, default=None)
     parser.add_argument("--noise_head_topk", type=int, default=2)
     # ---- Noise / Self-Supervised Denoising Args ----
-    parser.add_argument("--bi_gamma", type=float, default=0.0, help="Reward attention on good items")
+    parser.add_argument("--bi_gamma", type=float, default=0.03, help="Reward attention on good items")
     parser.add_argument("--cons_beta", type=float, default=0.0, help="Consistency loss weight (self-supervised)")
     parser.add_argument("--noise_alpha", type=float, default=0.5,
                         help="Fusion weight between model noise score and prior mask")
@@ -126,11 +126,11 @@ def parse_args():
     parser.add_argument("--state_dict_path", default=None, type=str)
     parser.add_argument("--cuda", type=str, default="7")
 
-    parser.add_argument("--train_noise_filter_threshold", type=float, default=0)
-    parser.add_argument("--test_noise_filter_threshold", type=float, default=0)
+    parser.add_argument("--train_noise_filter_threshold", type=float, default=0.85)
+    parser.add_argument("--test_noise_filter_threshold", type=float, default=0.95)
     parser.add_argument("--denoise_category", type=str, default="none")
-    parser.add_argument("--train_max_denoise_num", type=int, default=3)
-    parser.add_argument("--test_max_denoise_num", type=int, default=3)
+    parser.add_argument("--train_max_denoise_num", type=int, default=1)
+    parser.add_argument("--test_max_denoise_num", type=int, default=1)
     parser.add_argument("--remain_last", type=int, default=0)
 
     return parser.parse_args()

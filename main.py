@@ -23,10 +23,10 @@ from tqdm import tqdm
 import copy
 import nni
 
-from model import SASRec
-import util.world
+from util.model import SASRec
+import util.world as world
 from util.logger import CompleteLogger
-import util.utils
+import util.utils as utils
 from os.path import join
 from tensorboardX import SummaryWriter
 from pprint import pprint

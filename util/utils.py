@@ -3,7 +3,7 @@ import random
 import torch
 import numpy as np
 
-from model import SASRec
+from util.model import SASRec
 from torch.utils.data import DataLoader
 
 

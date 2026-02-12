@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 import ast
 from torch.utils.data import Dataset
-import world
+import util.world as world
 import torch.nn.functional as F
 import os
 import pandas as pd
