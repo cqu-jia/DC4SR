@@ -1,0 +1,6 @@
+pandas==3.0.0
+scipy==1.17.0
+scikit-learn==1.8.0
+PyYAML==6.0.3
+transformers==5.1.0
+accelerate==1.12.0
