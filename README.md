@@ -1,6 +1,6 @@
-# DC4SR
+# BOLD
 
-DC4SR is a dual-view calibration framework for denoising sequential recommendation.
+BOLD is a dual-view calibration framework for denoising sequential recommendation.
 
 This repository provides a training script (`main.py`) that supports two modes:
 - **With LLM**: uses an LLM-based semantic prior and refreshes it periodically.
